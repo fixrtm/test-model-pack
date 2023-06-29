@@ -1,0 +1,57 @@
+{
+  "trainName": "fixRTM_DebugTrain",
+  "trainType": "EC",
+  "tags": "Debug",
+  "trainModel2": {
+    "modelFile": "fixrtm_debugtrain.obj",
+    "textures": [
+      [
+        "default",
+        "textures/train/fixrtm_debugtrain.png",
+        ""
+      ]
+    ],
+    "rendererPath": "scripts/fixrtm_debugtrain.js"
+  },
+  "buttonTexture": "textures/train/fixrtm_debugtrain_button.png",
+  "bogieModel2": {
+    "modelFile": "ModelBogie.class",
+    "textures": [
+      [
+        "default",
+        "textures/train/bogie.png"
+      ]
+    ]
+  },
+  "rollsignNames": ["None"],
+  "rollsigns": [],
+  "smoothing": true,
+  "doCulling": true,
+  "accuracy": "MEDIUM",
+  "renderLight": true,
+  "playerPos": [
+    [ 0.0, 1.0, 4.5 ],
+    [ 0.0, 1.0, -4.5 ]
+  ],
+  "bogiePos": [
+    [
+      0.0,
+      0.0,
+      4.0
+    ],
+    [
+      0.0,
+      0.0,
+      -4.0
+    ]
+  ],
+  "trainDistance": 5.0,
+  "accelerateion": 0.0019,
+  "maxSpeed": [
+    0.3472,
+    0.625,
+    0.9027,
+    1.1805,
+    1.3888
+  ]
+}
