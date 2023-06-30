@@ -27,6 +27,7 @@ function render(entity, pass, par3)
         renderTexts([
             "is Front: " + entity.formation.isFrontCar(entity),
             "f-dir: " + entity.formation.getEntry(entity).dir,
+            "role: " + entity.getVehicleState(TrainStateType.Role),
             "dor: " + entity.getVehicleState(TrainStateType.Door),
             "dir: " + entity.getVehicleState(TrainStateType.Direction),
             "spd: " + entity.getSpeed() * METER_PER_TICK_TO_KILO_METER_PER_HOUR,
