@@ -25,9 +25,10 @@ function render(entity, pass, par3)
         GL11.glRotatef(-renderer.getYaw(entity), 0, 1, 0);
         GL11.glScalef(2, 2, 2);
         renderTexts([
-            "f-dir: " + entity.formation.getEntry(entity).dir, 0,
-            "dor: " + entity.getVehicleState(TrainStateType.Door), 0,
-            "dir: " + entity.getVehicleState(TrainStateType.Direction), 0,
+            "is Front: " + entity.formation.isFrontCar(entity),
+            "f-dir: " + entity.formation.getEntry(entity).dir,
+            "dor: " + entity.getVehicleState(TrainStateType.Door),
+            "dir: " + entity.getVehicleState(TrainStateType.Direction),
             "spd: " + entity.getSpeed() * METER_PER_TICK_TO_KILO_METER_PER_HOUR,
         ], 0, 0, 0)
         GL11.glPopMatrix();
